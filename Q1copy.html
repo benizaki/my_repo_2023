@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <script src="Q1.js"></script>
+    <style>
+        div {border: black solid; text-align: center; text-align-last: center;}
+        .city_divs {background-color: aqua; margin: 2%; width: 33%;}
+    </style>
+</head>
+<body onload="darkCheck()">
+    <div style="background-color:lightgreen; height: 10%; ">
+        <p>Weather Around The World</p>
+    </div>
+
+    <div style="display: flex; flex-direction: row; border: none;">
+        <div class="city_divs">
+            <p id="JHB1">Johannesburg</p>
+            <p id="JHB2"></p>
+        </div>
+        <div class="city_divs">
+            <p id="LND1">London</p>
+            <p id="LND2"></p>
+        </div>
+        <div class="city_divs">
+            <p id="JLM1">Jerusalem</p>
+            <p id="JLM2"></p>
+        </div>
+    </div>
+
+    <div style="border: none;">
+        <button onclick="fetchWeather()">Refresh</button>
+    </div>
+    <div style="border: none;">
+    </br>
+        <button onclick="darkMode()">Dark Mode</button>
+    </div>
+</body>
+</html>
